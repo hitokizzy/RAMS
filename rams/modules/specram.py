@@ -1,4 +1,4 @@
-# From Geez-Userbot
+# From Geez-rams
 # port by : vckyou
 # Gausah ksini, Hush hush!
 # Hargai Apa yang Telah di Buat, Yang hapus kredit ni ,Bapanya meninggal.

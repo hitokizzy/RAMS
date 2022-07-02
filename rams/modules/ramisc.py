@@ -1,4 +1,4 @@
-# imported from github.com/ravana69/PornHub to userbot by @heyworld
+# imported from github.com/ravana69/PornHub to rams by @heyworld
 # please don't nuke my credits 😓
 import asyncio
 import logging

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Ultroid - UserBot
+# Ultroid - rams
 # Copyright (C) 2022 G
 #
-# This file is a part of < https://github.com/mrismanaziz/Man-Userbot/ >
-# PLease read the GNU Affero General Public License in <https://www.github.com/mrismanaziz/Man-Userbot/blob/main/LICENSE/>
+# This file is a part of < https://github.com/mrismanaziz/Man-rams/ >
+# PLease read the GNU Affero General Public License in <https://www.github.com/mrismanaziz/Man-rams/blob/main/LICENSE/>
 
 clear
 sec=3
@@ -18,7 +18,7 @@ apt-get update
 apt-get upgrade -y
 pkg upgrade -y
 pkg install python wget -y
-wget https://raw.githubusercontent.com/ramadhani892/RAM-UBOT/RAM-UBOT/userbot/resources/session/string_session.py
+wget https://raw.githubusercontent.com/ramadhani892/RAM-UBOT/RAM-UBOT/rams/resources/session/string_session.py
 pip install telethon
 clear
 python3 string_session.py

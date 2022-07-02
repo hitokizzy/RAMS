@@ -6,10 +6,10 @@
 # thanks to the owner of X-tra-Telegram for tts fix
 #
 # Recode by @mrismanaziz
-# FROM Man-Userbot
+# FROM Man-rams
 # t.me/SharingUserbot
 #
-""" Userbot module containing various scrapers. """
+""" rams module containing various scrapers. """
 
 import asyncio
 import io
@@ -227,7 +227,7 @@ async def wiki(wiki_q):
         await wiki_q.client.send_file(
             wiki_q.chat_id,
             "output.txt",
-            thumb="userbot/resources/logo.jpg",
+            thumb="rams/resources/logo.jpg",
             reply_to=wiki_q.id,
             caption="**Output terlalu besar, dikirim sebagai file**",
         )

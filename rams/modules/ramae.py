@@ -1,5 +1,5 @@
 # Based Plugins
-# Ported for Lord-Userbot By liualvinas/Alvin
+# Ported for Lord-rams By liualvinas/Alvin
 
 from telethon import events
 from rams.events import register

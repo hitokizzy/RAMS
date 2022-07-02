@@ -4,7 +4,7 @@
 # you may not use this file except in compliance with the License.
 #
 # You can find misc modules, which dont fit in anything xD
-""" Userbot module for other small commands. """
+""" rams module for other small commands. """
 
 import io
 import os
@@ -81,7 +81,7 @@ async def restart_bot(rstrt):
         await rstrt.client.send_message(
             BOTLOG_CHATID, "#RESTART \n" "**RAM-UBOT Berhasil Di Restart**"
         )
-    args = [sys.executable, "-m", "userbot"]
+    args = [sys.executable, "-m", "rams"]
     execle(sys.executable, *args, environ)
 
 
@@ -90,7 +90,7 @@ async def reedme(event):
     await edit_or_reply(
         event,
         "**Berikut sesuatu untuk kamu baca:**\n"
-        "\n⭐ [Userbot Repo](https://github.com/ramadhani892/RAM-UBOT/blob/RAM-UBOT/README.md)"
+        "\n⭐ [rams Repo](https://github.com/ramadhani892/RAM-UBOT/blob/RAM-UBOT/README.md)"
         "\n⭐ [Video Tutorial](https://t.me/Geezprojectt/50)"
         "\n⭐ [List Variabel Heroku untuk RAM-UBOT](https://t.me/UserbotCh/11)",
     )
@@ -154,7 +154,7 @@ async def raw(event):
     with io.BytesIO(str.encode(the_real_message)) as out_file:
         out_file.name = "raw_message_data.txt"
         await edit_or_reply(
-            event, "`Check the userbot log for the decoded message data !!`"
+            event, "`Check the rams log for the decoded message data !!`"
         )
         await event.client.send_file(
             BOTLOG_CHATID,
@@ -302,7 +302,7 @@ CMD_HELP.update(
     {
         "sleep": f"**Plugin : **`sleep`\
         \n\n  •  **Syntax :** `{cmd}sleep`\
-        \n  •  **Function : **Biarkan Userbot lu tidur selama beberapa detik \
+        \n  •  **Function : **Biarkan rams lu tidur selama beberapa detik \
     "
     }
 )
@@ -324,9 +324,9 @@ CMD_HELP.update(
 
 CMD_HELP.update(
     {
-        "readme": f"**Plugin : **`Panduan Menggunakan userbot`\
+        "readme": f"**Plugin : **`Panduan Menggunakan rams`\
         \n\n  •  **Syntax :** `{cmd}readme`\
-        \n  •  **Function : **Menyediakan tautan untuk mengatur userbot dan modulnya\
+        \n  •  **Function : **Menyediakan tautan untuk mengatur rams dan modulnya\
     "
     }
 )
@@ -336,7 +336,7 @@ CMD_HELP.update(
     {
         "restart": f"**Plugin : **`Restart RAM-UBOT`\
         \n\n  •  **Syntax :** `{cmd}restart`\
-        \n  •  **Function : **Untuk Merestart userbot.\
+        \n  •  **Function : **Untuk Merestart rams.\
     "
     }
 )
@@ -346,7 +346,7 @@ CMD_HELP.update(
     {
         "shutdown": f"**Plugin : **`shutdown`\
         \n\n  •  **Syntax :** `{cmd}shutdown`\
-        \n  •  **Function : **Mematikan Userbot.\
+        \n  •  **Function : **Mematikan rams.\
     "
     }
 )

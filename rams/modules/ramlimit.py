@@ -1,4 +1,4 @@
-# From vckyou Geez-Userbot
+# From vckyou Geez-rams
 # WOI NGENTOT, KALO FORK KASIH BINTANG
 # Yang apus kredit Lo ngentot!
 

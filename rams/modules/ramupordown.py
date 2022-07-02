@@ -6,7 +6,7 @@
 # The entire source code is OSSRPL except
 # 'download, uploadir, uploadas, upload' which is MPL
 # License: MPL and OSSRPL
-""" Userbot module which contains everything related to \
+""" rams module which contains everything related to \
     downloading/uploading from/to the server. """
 
 import json
@@ -28,7 +28,7 @@ from rams.events import register
 
 @register(pattern=r".download(?: |$)(.*)", outgoing=True)
 async def download(target_file):
-    """ For .download command, download files to the userbot's server. """
+    """ For .download command, download files to the rams's server. """
     await target_file.edit("Processing ...")
     input_str = target_file.pattern_match.group(1)
     if not os.path.isdir(TEMP_DOWNLOAD_DIRECTORY):
@@ -181,10 +181,10 @@ async def uploadir(udir_event):
 
 @register(pattern=r".upload (.*)", outgoing=True)
 async def upload(u_event):
-    """ For .upload command, allows you to upload a file from the userbot's server """
+    """ For .upload command, allows you to upload a file from the rams's server """
     await u_event.edit("Processing ...")
     input_str = u_event.pattern_match.group(1)
-    if input_str in ("userbot.session", "config.env"):
+    if input_str in ("rams.session", "config.env"):
         return await u_event.edit("`That's a dangerous operation! Not Permitted!`")
     if os.path.exists(input_str):
         c_time = time.time()

@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #  -*- coding: utf-8 -*-
-#  UniBorg Telegram UseRBot
+#  UniBorg Telegram rams
 #  Copyright (C) 2020 @UniBorg
 #
 # This code is licensed under

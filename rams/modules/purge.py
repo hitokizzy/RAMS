@@ -4,9 +4,9 @@
 # you may not use this file except in compliance with the License.
 #
 # recode by @mrismanaziz
-# From GeezProjects <https://github.com/vckyou/Geez-Userbot>
+# From GeezProjects <https://github.com/vckyou/Geez-rams>
 
-""" Modul Userbot untuk menghapus pesan yang tidak dibutuhkan (chat spam atau lainnya)."""
+""" Modul rams untuk menghapus pesan yang tidak dibutuhkan (chat spam atau lainnya)."""
 
 
 from asyncio import sleep

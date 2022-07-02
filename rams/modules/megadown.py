@@ -191,6 +191,6 @@ CMD_HELP.update(
     {
         "mega": ">`.mega <MEGA.nz link>`"
         "\nUsage: Balas tautan MEGA.nz atau tempel tautan MEGA.nz Anda Ke "
-        "unduh file ke server userbot Anda."
+        "unduh file ke server rams Anda."
     }
 )

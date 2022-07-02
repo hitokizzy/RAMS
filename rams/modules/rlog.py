@@ -1,4 +1,4 @@
-# Credits: cat userbot
+# Credits: cat rams
 # Ported by @vckyaz
 # FROM GeezProjects <https://github.com/vckyou/GeezProjects>
 

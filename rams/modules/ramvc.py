@@ -36,7 +36,7 @@ async def join_(event):
     else:
         chat_id = event.chat_id
     if chat_id:
-        file = "./userbot/resource/SEPI.mp3"
+        file = "./rams/resource/SEPI.mp3"
         try:
             await sayang.join_group_call(
                 chat_id,

@@ -1,5 +1,5 @@
 """
-Anilist Search Plugin for Userbot
+Anilist Search Plugin for rams
 Usage : .anilist animeName
 By :- @Zero_cool7870
 ported char, airing and manga by @sandy1709 and @mrconfused

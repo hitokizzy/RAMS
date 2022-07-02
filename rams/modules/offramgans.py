@@ -1,7 +1,7 @@
 # Copyright (C) 2020 TeamUltroid
 # Ported by VckyGanss
 # Recode by @Vckyouuu
-# FromVT-Userbot
+# FromVT-rams
 # Saya mencury
 
 import os

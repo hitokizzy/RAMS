@@ -29,7 +29,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 # Ported from Xtra-telegram by @heyworld
-""" Userbot module for frying stuff. ported by @NeoMatrix90 """
+""" rams module for frying stuff. ported by @NeoMatrix90 """
 
 import io
 from random import randint, uniform

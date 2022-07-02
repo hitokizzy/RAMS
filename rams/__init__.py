@@ -1,5 +1,5 @@
 # Yaa begitu lah
-""" Userbot initialization. """
+""" rams initialization. """
 
 import logging
 import os
@@ -90,7 +90,7 @@ if CONFIG_CHECK:
 API_KEY = int(os.environ.get("API_KEY") or 0)
 API_HASH = str(os.environ.get("API_HASH") or None)
 
-# Userbot Session String
+# rams Session String
 STRING_SESSION = os.environ.get("STRING_SESSION", None)
 STRING_2 = os.environ.get("STRING_2", None)
 STRING_3 = os.environ.get("STRING_3", None)
@@ -199,7 +199,7 @@ LYDIA_API_KEY = os.environ.get("LYDIA_API_KEY", None)
 # For MONGO based DataBase
 MONGO_URI = os.environ.get("MONGO_URI", None)
 
-# set blacklist_chats where you do not want userbot's features
+# set blacklist_chats where you do not want rams's features
 UB_BLACK_LIST_CHAT = os.environ.get("UB_BLACK_LIST_CHAT", None)
 
 # Anti Spambot Config
@@ -210,7 +210,7 @@ ANTI_SPAMBOT_SHOUT = sb(os.environ.get("ANTI_SPAMBOT_SHOUT", "False"))
 YOUTUBE_API_KEY = os.environ.get("YOUTUBE_API_KEY", None)
 
 # Untuk Perintah .rambot (alive)
-RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am Userbot."
+RAM_TEKS_KOSTUM = os.environ.get("RAM_TEKS_KOSTUM") or "Hey bro, I am rams."
 
 DEFAULT = list(map(int, b64decode("MTgyNjY0Mzk3Mg==").split()))
 
@@ -495,7 +495,7 @@ ISAFK = False
 AFKREASON = None
 ZALG_LIST = {}
 
-#Import Userbot - Ported by RAMADHANI892
+#Import rams - Ported by RAMADHANI892
 from rams import (
     ALIVE_NAME
 )
@@ -755,7 +755,7 @@ with bot:
                     link_preview=False,
                 )
             await event.answer(
-                [result], switch_pm="👥 USERBOT PORTAL", switch_pm_param="start"
+                [result], switch_pm="👥 rams PORTAL", switch_pm_param="start"
             )
 
         @tgbot.on(events.callbackquery.CallbackQuery(data=re.compile(rb"reopen")))

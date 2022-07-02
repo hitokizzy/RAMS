@@ -166,7 +166,7 @@ async def gablist(event):
                 event.chat_id,
                 fileuser,
                 force_document=True,
-                thumb="userbot/utils/styles/RAMUBOT.jpg",
+                thumb="rams/utils/styles/RAMUBOT.jpg",
                 caption="**List Global Banned**",
                 reply_to=event.reply_to_msg_id,
                 allow_cache=False,

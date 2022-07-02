@@ -31,9 +31,9 @@
 ## Credit
 TERIMAKASIH UNTUK
 
-*   [VICKY](https://t.me/vckyaz) - ⚡Geez-Userbot⚡
+*   [VICKY](https://t.me/vckyaz) - ⚡Geez-rams⚡
 *   [KOALA](https://t.me/manusiarakitann) - KAMPANG BOT
 *   [TEAMULTROID](https://github.com/TeamUltroid) - ULTROID
 *   [RAMA](https://t.me/merdhni) - ⭐RAM - UBOT⭐
-*   [RISMAN](https://github.com/mrismanaziz/Man-Userbot) Man-Userbot
+*   [RISMAN](https://github.com/mrismanaziz/Man-rams) Man-rams
 *    DAN MASIH BANYAK LAGI TOT

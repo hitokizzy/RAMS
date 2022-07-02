@@ -370,7 +370,7 @@ CMD_HELP.update({
     f"`{cmd}sysd`\
 \nUsage: Shows system information using neofetch.\
 \n\n`{cmd}botver`\
-\nUsage: Shows the userbot version.\
+\nUsage: Shows the rams version.\
 \n\n`{cmd}pip` <module(s)>\
 \nUsage: Does a search of pip modules(s).\
 \n\n`{cmd}start`\

@@ -1,11 +1,11 @@
-# Ultroid - UserBot
+# Ultroid - rams
 # Copyright (C) 2021 TeamUltroid
 #
 # This file is a part of < https://github.com/TeamUltroid/Ultroid/ >
 # PLease read the GNU Affero General Public License in
 # <https://www.github.com/TeamUltroid/Ultroid/blob/main/LICENSE/>.
 #
-# Thanks to Man-Userbot <https://github.com/mrismanaziz/Man-Userbot>
+# Thanks to Man-rams <https://github.com/mrismanaziz/Man-rams>
 # recode by @vckyaz
 # FROM GeezProjects <https://github.com/vckyou/GeezProjects>
 #

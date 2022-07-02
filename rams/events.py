@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
 #
-"""Userbot module for managing events. One of the main components of the userbot."""
+"""rams module for managing events. One of the main components of the rams."""
 
 import inspect
 import re
@@ -206,7 +206,7 @@ def register(**args):
                     ftext += "\nJika mau, Anda bisa melaporkan error ini,"
                     ftext += "\ncukup forward saja pesan ini ke @SharingUserbot"
                     ftext += "\n================================\n\n"
-                    ftext += "--------BEGIN USERBOT TRACEBACK LOG--------\n"
+                    ftext += "--------BEGIN rams TRACEBACK LOG--------\n"
                     ftext += "\nTanggal : " + date
                     ftext += "\nChat ID : " + str(check.chat_id)
                     ftext += "\nUser ID : " + str(check.sender_id)
@@ -216,7 +216,7 @@ def register(**args):
                     ftext += str(format_exc())
                     ftext += "\n\nError text:\n"
                     ftext += str(sys.exc_info()[1])
-                    ftext += "\n\n--------END USERBOT TRACEBACK LOG--------"
+                    ftext += "\n\n--------END rams TRACEBACK LOG--------"
 
                     command = 'git log --pretty=format:"%an: %s" -10'
 

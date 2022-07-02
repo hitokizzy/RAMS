@@ -1,4 +1,4 @@
-""" Userbot module for other small commands. """
+""" rams module for other small commands. """
 from rams import CMD_HELP, ALIVE_NAME
 from rams.events import register
 

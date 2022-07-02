@@ -37,27 +37,27 @@ async def handler(tele):
 
 @ram_cmd(pattern="gbanb(?: |$)(.*)")
 @register(pattern=r"^\.cgbanb(?: |$)(.*)", sudo=True)
-async def gben(userbot):
-    dc = userbot
+async def gben(rams):
+    dc = rams
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
         dark = await dc.reply("`Ingin Mengaktifkan Perintah Global Banned!`")
     else:
         dark = await dc.edit("`Memproses Global Banned Pengguna Ini!!`")
-    me = await userbot.client.get_me()
+    me = await rams.client.get_me()
     await dark.edit(f"`Global Banned Akan Segera Aktif!!`")
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await userbot.get_chat()
+    await rams.get_chat()
     a = b = 0
-    if userbot.is_private:
-        user = userbot.chat
-        reason = userbot.pattern_match.group(1)
+    if rams.is_private:
+        user = rams.chat
+        reason = rams.pattern_match.group(1)
     else:
-        userbot.chat.title
+        rams.chat.title
     try:
-        user, reason = await get_user_from_event(userbot)
+        user, reason = await get_user_from_event(rams)
     except BaseException:
         pass
     try:
@@ -78,12 +78,12 @@ async def gben(userbot):
             pass
         testuserbot = [
             d.entity.id
-            for d in await userbot.client.get_dialogs()
+            for d in await rams.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
         for i in testuserbot:
             try:
-                await userbot.client.edit_permissions(i, user, view_messages=False)
+                await rams.client.edit_permissions(i, user, view_messages=False)
                 a += 1
                 await dark.edit(f"`Global Banned Aktif ✅`")
             except BaseException:
@@ -102,29 +102,29 @@ async def gben(userbot):
 
 @ram_cmd(pattern=r"ungbanb(?: |$)(.*)")
 @register(pattern=r"^\.cungbanb(?: |$)(.*)", sudo=True)
-async def gunben(userbot):
-    dc = userbot
+async def gunben(rams):
+    dc = rams
     sender = await dc.get_sender()
     me = await dc.client.get_me()
     if not sender.id == me.id:
         dark = await dc.reply("`Membatalkan Perintah Global Banned Pengguna Ini`")
     else:
         dark = await dc.edit("`Membatalkan Perintah Global Banned`")
-    me = await userbot.client.get_me()
+    me = await rams.client.get_me()
     await dark.edit(
         f"`Memulai Membatalkan Perintah Global Banned, Jangan Songong Lagi Ya!!!`"
     )
     my_mention = "[{}](tg://user?id={})".format(me.first_name, me.id)
     f"@{me.username}" if me.username else my_mention
-    await userbot.get_chat()
+    await rams.get_chat()
     a = b = 0
-    if userbot.is_private:
-        user = userbot.chat
-        reason = userbot.pattern_match.group(1)
+    if rams.is_private:
+        user = rams.chat
+        reason = rams.pattern_match.group(1)
     else:
-        userbot.chat.title
+        rams.chat.title
     try:
-        user, reason = await get_user_from_event(userbot)
+        user, reason = await get_user_from_event(rams)
     except BaseException:
         pass
     try:
@@ -143,12 +143,12 @@ async def gunben(userbot):
             pass
         testuserbot = [
             d.entity.id
-            for d in await userbot.client.get_dialogs()
+            for d in await rams.client.get_dialogs()
             if (d.is_group or d.is_channel)
         ]
         for i in testuserbot:
             try:
-                await userbot.client.edit_permissions(i, user, send_messages=True)
+                await rams.client.edit_permissions(i, user, send_messages=True)
                 a += 1
                 await dark.edit(f"`Membatalkan Global Banned... Memproses... `")
             except BaseException:

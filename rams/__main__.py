@@ -1,4 +1,4 @@
-""" Userbot start point """
+""" rams start point """
 
 
 import sys
@@ -24,7 +24,7 @@ try:
     ).json()
     if user.id in ramblacklist:
         LOGS.warning(
-            "USERBOT TIDAK DAPAT BERJALAN, KARNA LO KONTOL MAKE SEMEMA MENA, BOT LO DI MATIIN HEHEH, LAPORKAN KE @MERDHNI"        )
+            "rams TIDAK DAPAT BERJALAN, KARNA LO KONTOL MAKE SEMEMA MENA, BOT LO DI MATIIN HEHEH, LAPORKAN KE @MERDHNI"        )
         sys.exit(1)
     if 1826643972 not in DEVS:
         LOGS.warning(
@@ -36,7 +36,7 @@ except Exception as e:
     sys.exit(1)
 
 for module_name in ALL_MODULES:
-    imported_module = import_module("userbot.modules." + module_name)
+    imported_module = import_module("rams.modules." + module_name)
 
 LOGS.info(f"Total Clients = {total} User")
 LOGS.info(f"Jika {user.first_name} Membutuhkan Bantuan, Silahkan Tanyakan di Grup https://t.me/ramsupportt")

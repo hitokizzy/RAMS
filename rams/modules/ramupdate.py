@@ -1,5 +1,5 @@
 """
-This module updates the userbot based on upstream revision
+This module updates the rams based on upstream revision
 """
 
 import sys
@@ -92,7 +92,7 @@ async def deploy(xx, repo, ups_rem, ac_br, txt):
                 xx, "**Gagal Apdet!** Di Karenakan Ada Code Yang rusak.`"
             )
         await edit_or_reply(
-            xx, f"**Seperti Nya, RAM-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari RAM-UBOT, Setelah itu Test Userbot mu, jika tidak Bekerja Bisa Bertanya Ke @ramsupportt**"
+            xx, f"**Seperti Nya, RAM-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari RAM-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @ramsupportt**"
     )
 
     else:
@@ -107,7 +107,7 @@ async def update(xx, repo, ups_rem, ac_br):
     except GitCommandError:
         repo.git.reset("--hard", "FETCH_HEAD")
     await edit_or_reply(
-        xx, f"**Seperti Nya, RAM-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari RAM-UBOT, Setelah itu Test Userbot mu, jika tidak Bekerja Bisa Bertanya Ke @ramsupportt**"
+        xx, f"**Seperti Nya, RAM-UBOT Mu Sudah Selesai Di Apdet, Silahkan Tunggu beberapa Saat Sampai Ada notif Dari RAM-UBOT, Setelah itu Test rams mu, jika tidak Bekerja Bisa Bertanya Ke @ramsupportt**"
     )
 
     try:
@@ -119,7 +119,7 @@ async def update(xx, repo, ups_rem, ac_br):
         pass
 
     # Spin a new instance of bot
-    args = [sys.executable, "-m", "userbot"]
+    args = [sys.executable, "-m", "rams"]
     execle(sys.executable, *args, environ)
 
 
@@ -147,7 +147,7 @@ async def upstream(event):
         if conf is None:
             return await xx.edit(
                 f"**Sayangnya, Directory {error} Tampaknya Bukan Dari Repo."
-                f"\nTapi Kita Bisa Memperbarui Paksa Userbot Menggunakan** `{cmd}ngentot dulu`"
+                f"\nTapi Kita Bisa Memperbarui Paksa rams Menggunakan** `{cmd}ngentot dulu`"
             )
         repo = Repo.init()
         origin = repo.create_remote("upstream", off_repo)
@@ -184,7 +184,7 @@ async def upstream(event):
         )
 
     if force_update:
-        await xx.edit("**Sinkronisasi Paksa Ke Kode Userbot Terbaru, Harap Tunggu...**")
+        await xx.edit("**Sinkronisasi Paksa Ke Kode rams Terbaru, Harap Tunggu...**")
 
     if conf == "lah":
         for commit in changelog.splitlines():

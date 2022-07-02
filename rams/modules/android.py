@@ -310,7 +310,7 @@ CMD_HELP.update(
         "\n\n>`.codename <brand> <device>`"
         "\nPenjelasan: Cari perangkat Android codename."
         "\n\n>`.pixeldl` **<download.pixelexperience.org>**"
-        "\nPenjelasan: Download pixel experience ROM ke server userbot anda."
+        "\nPenjelasan: Download pixel experience ROM ke server rams anda."
         "\n\n>`.specs <brand> <device>`"
         "\nPenjelasan: Untuk mendapatkan info spesifikasi perangkat."
         "\n\n>`.twrp <codename>`"

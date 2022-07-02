@@ -2,7 +2,7 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.c (the "License");
 # you may not use this file except in compliance with the License.
-""" Userbot module for having some fun with people. """
+""" rams module for having some fun with people. """
 
 import os
 import urllib
@@ -880,7 +880,7 @@ weebyfont = [
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"(\w+)say (.*)"))
 async def _(cowmsg):
-    """ For .cowsay module, userbot wrapper for cow which says things. """
+    """ For .cowsay module, rams wrapper for cow which says things. """
     arg = cowmsg.pattern_match.group(1).lower()
     text = cowmsg.pattern_match.group(2)
 
@@ -1190,7 +1190,7 @@ async def faces(owo):
 
 @bot.on(ram_cmd(outgoing=True, pattern=r"react$"))
 async def react_meme(react):
-    """ Make your userbot react to everything. """
+    """ Make your rams react to everything. """
     await react.edit(choice(FACEREACTS))
 
 
@@ -1846,7 +1846,7 @@ CMD_HELP.update({
     f"\n\n>`{cmd}owo`"
     "\nUsage: UwU"
     f"\n\n>`{cmd}react`"
-    "\nUsage: Buat Userbot Anda bereaksi terhadap semuanya."
+    "\nUsage: Buat rams Anda bereaksi terhadap semuanya."
     f"\n\n>`{cmd}slap`"
     "\nUsage: balas tampar mereka dengan benda acak !!"
     f"\n\n>`{cmd}cry`"

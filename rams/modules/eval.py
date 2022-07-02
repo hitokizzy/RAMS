@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-"""Userbot module for executing code and terminal commands from Telegram."""
+"""rams module for executing code and terminal commands from Telegram."""
 
 import asyncio
 import io
@@ -24,7 +24,7 @@ async def _(event):
     expression = event.pattern_match.group(1)
     if not expression:
         return await event.edit("**Berikan Code untuk di eksekusi.**")
-    if expression in ("userbot.session", "config.env"):
+    if expression in ("rams.session", "config.env"):
         return await event.edit("**Itu operasi yang berbahaya! Tidak diperbolehkan!**")
     cmd = "".join(event.message.message.split(maxsplit=1)[1:])
     if not cmd:
@@ -82,7 +82,7 @@ async def _(event):
                 event.chat_id,
                 out_file,
                 force_document=True,
-                thumb="userbot/resources/logo.jpg",
+                thumb="rams/resources/logo.jpg",
                 allow_cache=False,
                 caption=f"`{cmd}`" if len(cmd) < 998 else None,
                 reply_to=reply_to_id,
@@ -97,7 +97,7 @@ async def run(event):
     code = event.pattern_match.group(1)
     if not code:
         return await event.edit("**Read** `.help exec` **for an example.**")
-    if code in ("userbot.session", "config.env"):
+    if code in ("rams.session", "config.env"):
         return await event.edit("`Itu operasi yang berbahaya! Tidak diperbolehkan!`")
     await event.edit("`Processing...`")
     if len(code.splitlines()) <= 5:
@@ -129,7 +129,7 @@ async def run(event):
             event.chat_id,
             "output.txt",
             reply_to=event.id,
-            thumb="userbot/resources/logo.jpg",
+            thumb="rams/resources/logo.jpg",
             caption="**Output terlalu besar, dikirim sebagai file**",
         )
         return remove("output.txt")
@@ -141,7 +141,7 @@ async def terminal_runner(event):
     command = event.pattern_match.group(1)
     if not command:
         return await event.edit("`Give a command or use .help term for an example.`")
-    if command in ("userbot.session", "config.env"):
+    if command in ("rams.session", "config.env"):
         return await event.edit("`Itu operasi yang berbahaya! Tidak diperbolehkan!`")
     await event.edit("`Processing...`")
     process = await asyncio.create_subprocess_shell(
@@ -161,7 +161,7 @@ async def terminal_runner(event):
             event.chat_id,
             "output.txt",
             reply_to=event.id,
-            thumb="userbot/resources/logo.jpg",
+            thumb="rams/resources/logo.jpg",
             caption="**Output terlalu besar, dikirim sebagai file**",
         )
         return remove("output.txt")
@@ -189,7 +189,7 @@ async def _(event):
                 event.chat_id,
                 out_file,
                 force_document=True,
-                thumb="userbot/resources/logo.jpg",
+                thumb="rams/resources/logo.jpg",
                 allow_cache=False,
                 reply_to=reply_to_id,
             )

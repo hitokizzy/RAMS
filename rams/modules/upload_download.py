@@ -6,7 +6,7 @@
 # The entire source code is OSSRPL except
 # 'download, uploadir, uploadas, upload' which is MPL
 # License: MPL and OSSRPL
-""" Userbot module which contains everything related to
+""" rams module which contains everything related to
      downloading/uploading from/to the server. """
 
 import asyncio
@@ -30,7 +30,7 @@ from rams.utils.FastTelethon import download_file, upload_file
 
 @ram_cmd(pattern="download(?: |$)(.*)")
 async def download(target_file):
-    """For .download command, download files to the userbot's server."""
+    """For .download command, download files to the rams's server."""
     xx = await edit_or_reply(target_file, "`Processing...`")
     input_str = target_file.pattern_match.group(1)
     replied = await target_file.get_reply_message()

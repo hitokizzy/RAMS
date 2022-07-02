@@ -1,4 +1,4 @@
-# BASED FROM ULTROID PORTED FOR LORD USERBOT BY ALVIN / @LIUALVINAS
+# BASED FROM ULTROID PORTED FOR LORD rams BY ALVIN / @LIUALVINAS
 # THANKS ULTROID
 # DONT REMOVE THIS
 # ALVIN GANTENG
@@ -35,7 +35,7 @@ async def _(event):
 
 
 # Alvin Ganteng
-# Ported For Lord Userbot From Ultroid
+# Ported For Lord rams From Ultroid
 
 CMD_HELP.update({"tempmail": "**Modules:** __Temp Mail__\n\n**Perintah:** `.tm`"
                  "\n**Penjelasan:** Mendapatkan Email Gratis Dari Temp Mail"})

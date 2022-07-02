@@ -3,8 +3,8 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" Userbot module for getting the date
-    and time of any country or the userbot server.  """
+""" rams module for getting the date
+    and time of any country or the rams server.  """
 
 from datetime import datetime as dt
 

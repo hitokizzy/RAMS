@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" Userbot module for filter commands """
+""" rams module for filter commands """
 
 from asyncio import sleep
 from re import IGNORECASE, escape, search
@@ -152,7 +152,7 @@ async def filters_active(event):
 CMD_HELP.update(
     {
         "filter": f"`{cmd}fltrs`\
-    \nUsage: Melihat filter userbot yang aktif di obrolan.\
+    \nUsage: Melihat filter rams yang aktif di obrolan.\
     \n\n`{cmd}fltr` <keyword> <balasan> atau balas ke pesan ketik {cmd}filter <keyword>\
     \nUsage: Membuat filter di obrolan.\
     \nBot Akan Membalas Jika Ada Yang Menyebut 'keyword' yang dibuat.\

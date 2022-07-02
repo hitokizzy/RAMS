@@ -1,7 +1,7 @@
 
 # From Koala <@manusiarakitann/> Kampang-Bot
 # Recode by RAM-UBOT <@merdhni/>
-""" Userbot module which contains afk-related commands """
+""" rams module which contains afk-related commands """
 
 from datetime import datetime
 import time

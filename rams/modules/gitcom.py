@@ -2,7 +2,7 @@
 #
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
-# Ported to UserBot by @Mayur_Karaniya
+# Ported to rams by @Mayur_Karaniya
 
 from github import Github
 import os
@@ -11,11 +11,11 @@ from datetime import datetime
 # from sample_config import Config
 # from uniborg.util import admin_cmd, humanbytes, progress, time_formatter
 from rams.events import register
-# from userbot.events import humanbytes, progress, time_formatter
+# from rams.events import humanbytes, progress, time_formatter
 from rams import CMD_HELP, GITHUB_ACCESS_TOKEN, GIT_REPO_NAME, bot
 
 
-GIT_TEMP_DIR = "./userbot/temp/"
+GIT_TEMP_DIR = "./rams/temp/"
 # @borg.on(admin_cmd(pattern="commit ?(.*)", allow_sudo=True))
 
 
@@ -28,7 +28,7 @@ async def download(event):
         await event.edit("`Please ADD Proper Access Token from github.com`")
         return
     if GIT_REPO_NAME is None:
-        await event.edit("`Please ADD Proper Github Repo Name of your userbot`")
+        await event.edit("`Please ADD Proper Github Repo Name of your rams`")
         return
     mone = await event.reply("Processing ...")
     if not os.path.isdir(GIT_TEMP_DIR):
@@ -71,9 +71,9 @@ async def git_commit(file_name, mone):
         if i == 'ContentFile(path="' + file_name + '")':
             return await mone.edit("`File Already Exists`")
             create_file = False
-    file_name = "userbot/modules/" + file_name
+    file_name = "rams/modules/" + file_name
     if create_file:
-        file_name = file_name.replace("./userbot/temp/", "")
+        file_name = file_name.replace("./rams/temp/", "")
         print(file_name)
         try:
             repo.create_file(
@@ -84,7 +84,7 @@ async def git_commit(file_name, mone):
             print("Committed File")
             ccess = GIT_REPO_NAME
             ccess = ccess.strip()
-            await mone.edit(f"`Commited On Your Github Repo`\n\n[Your Modules](https://github.com/{ccess}/tree/sql-extended/userbot/modules/)")
+            await mone.edit(f"`Commited On Your Github Repo`\n\n[Your Modules](https://github.com/{ccess}/tree/sql-extended/rams/modules/)")
         except BaseException:
             print("Cannot Create Plugin")
             await mone.edit("Cannot Upload Plugin")
@@ -95,6 +95,6 @@ async def git_commit(file_name, mone):
 CMD_HELP.update({
     "gcommit":
     ".gcommit\
-    \nUsage: GITHUB File Uploader Plugin for userbot. Heroku Automation should be Enabled. Else u r not that lazy , For lazy people\
+    \nUsage: GITHUB File Uploader Plugin for rams. Heroku Automation should be Enabled. Else u r not that lazy , For lazy people\
 \nInstructions:- Set GITHUB_ACCESS_TOKEN and GIT_REPO_NAME Variables in Heroku vars First\
 \n.commit reply_to_any_plugin can be any type of file too. but for plugin must be in .py ."})

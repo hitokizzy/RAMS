@@ -3,7 +3,7 @@
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
 #
-""" Userbot help command """
+""" rams help command """
 
 from rams import CMD_HANDLER as cmd
 from rams import CMD_HELP, EMOJI_HELP, bot

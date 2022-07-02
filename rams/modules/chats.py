@@ -2,7 +2,7 @@
 # from <ram-ubot/>
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
 # you may not use this file except in compliance with the License.
-""" Userbot module containing userid, chatid and log commands"""
+""" rams module containing userid, chatid and log commands"""
 
 import asyncio
 import csv
@@ -410,7 +410,7 @@ async def _(event):
 
 
 # inviteall Ported By @VckyouuBitch
-# From Geez - Projects <https://github.com/vckyou/Geez-UserBot>
+# From Geez - Projects <https://github.com/vckyou/Geez-rams>
 # Copyright © Team Geez - Project
 
 

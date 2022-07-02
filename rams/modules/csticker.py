@@ -1,6 +1,6 @@
 # Random RGB Sticklet by @PhycoNinja13b
 # modified by @UniBorg
-# ported to userbot by @heyworld & thanks to @Xcruzhd2 for Fonts
+# ported to rams by @heyworld & thanks to @Xcruzhd2 for Fonts
 # From Mana ya
 
 import io
@@ -23,7 +23,7 @@ async def sticklet(event):
     # the text on which we would like to do the magic on
     sticktext = event.pattern_match.group(1)
 
-    # delete the userbot command,
+    # delete the rams command,
     # i don't know why this is required
     await event.delete()
 

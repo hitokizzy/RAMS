@@ -471,9 +471,9 @@ async def FakeGoogleSearch(event):
     blue = (0, 0, 255)
     black = (0, 0, 0)
     font1 = ImageFont.truetype(
-        "userbot/utils/styles/ProductSans-BoldItalic.ttf", 20)
+        "rams/utils/styles/ProductSans-BoldItalic.ttf", 20)
     font2 = ImageFont.truetype(
-        "userbot/utils/styles/ProductSans-Light.ttf", 23)
+        "rams/utils/styles/ProductSans-Light.ttf", 23)
     drawing.text((450, 258), result, fill=blue, font=font1)
     drawing.text((270, 37), search, fill=black, font=font2)
     photo.save("downloads/test.jpg")

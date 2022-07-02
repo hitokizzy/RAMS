@@ -1,5 +1,5 @@
 """
-   Heroku manager for your userbot
+   Heroku manager for your rams
 """
 
 import math

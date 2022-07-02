@@ -1,5 +1,5 @@
 # Credits: @lahtololdah
-# Thaks For Risman <Man-Userbot>
+# Thaks For Risman <Man-rams>
 # t.me/SharingUserbot & t.me/Geezsupport
 
 import asyncio
@@ -111,7 +111,7 @@ async def autobot():
             await asyncio.sleep(1)
             await bot.send_message(bf, f"@{username}")
             await asyncio.sleep(1)
-            await bot.send_file(bf, "userbot/utils/styles/asisstant.jpg")
+            await bot.send_file(bf, "rams/utils/styles/asisstant.jpg")
             await asyncio.sleep(3)
             await bot.send_message(bf, "/setabouttext")
             await asyncio.sleep(1)
@@ -153,7 +153,7 @@ async def autobot():
         await asyncio.sleep(1)
         await bot.send_message(bf, f"@{username}")
         await asyncio.sleep(1)
-        await bot.send_file(bf, "userbot/utils/styles/asisstant.jpg")
+        await bot.send_file(bf, "rams/utils/styles/asisstant.jpg")
         await asyncio.sleep(3)
         await bot.send_message(bf, "/setabouttext")
         await asyncio.sleep(1)
@@ -189,16 +189,16 @@ def load_module(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"userbot/modules/{shortname}.py")
-        name = "userbot.modules.{}".format(shortname)
+        path = Path(f"rams/modules/{shortname}.py")
+        name = "rams.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Successfully imported " + shortname)
     else:
 
-        path = Path(f"userbot/modules/{shortname}.py")
-        name = "userbot.modules.{}".format(shortname)
+        path = Path(f"rams/modules/{shortname}.py")
+        name = "rams.modules.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.bot = bot
@@ -207,7 +207,7 @@ def load_module(shortname):
         mod.logger = logging.getLogger(shortname)
         spec.loader.exec_module(mod)
         # for imports
-        sys.modules["userbot.modules." + shortname] = mod
+        sys.modules["rams.modules." + shortname] = mod
         LOGS.info("Successfully imported " + shortname)
 
 
@@ -215,21 +215,21 @@ def start_assistant(shortname):
     if shortname.startswith("__"):
         pass
     elif shortname.endswith("_"):
-        path = Path(f"userbot/modules/assistant/{shortname}.py")
-        name = "userbot.modules.assistant.{}".format(shortname)
+        path = Path(f"rams/modules/assistant/{shortname}.py")
+        name = "rams.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         spec.loader.exec_module(mod)
         LOGS.info("Starting Your Assistant Bot.")
         LOGS.info("Assistant Sucessfully imported " + shortname)
     else:
-        path = Path(f"userbot/modules/assistant/{shortname}.py")
-        name = "userbot.modules.assistant.{}".format(shortname)
+        path = Path(f"rams/modules/assistant/{shortname}.py")
+        name = "rams.modules.assistant.{}".format(shortname)
         spec = importlib.util.spec_from_file_location(name, path)
         mod = importlib.util.module_from_spec(spec)
         mod.tgbot = bot.tgbot
         spec.loader.exec_module(mod)
-        sys.modules["userbot.modules.assistant" + shortname] = mod
+        sys.modules["rams.modules.assistant" + shortname] = mod
         LOGS.info("Assistant Successfully imported" + shortname)
 
 
@@ -241,7 +241,7 @@ def remove_plugin(shortname):
             del CMD_HELP[shortname]
 
         except BaseException:
-            name = f"userbot.modules.{shortname}"
+            name = f"rams.modules.{shortname}"
 
             for i in reversed(range(len(bot._event_builders))):
                 ev, cb = bot._event_builders[i]

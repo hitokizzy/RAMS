@@ -2,7 +2,7 @@
 # Keredit Motor Eh Maksudnya Kredit Kampang Bot (c) Koala Bgke @ManusiaRakitann
 # Karna Aku Gabut Aku Pasang Keredit Lagi # Keredit
 # Yak Pasang Credit Banyak Banyak Biar Makin Keren
-# Copyright (C) 2021 Alvin / @LiuAlvinas By Lord Userbot
+# Copyright (C) 2021 Alvin / @LiuAlvinas By Lord rams
 # All rights reserved.
 # Keredit
 # Licensed under the Raphielscape Public License, Version 1.d (the "License");
