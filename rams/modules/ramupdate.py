@@ -124,13 +124,13 @@ async def update(xx, repo, ups_rem, ac_br):
 
 
 @ram_cmd(pattern="apdet( lah| dulu|$)")
-@register(pattern=r"^\.capdet( lah| dulu|$)", sudo=True)
+@register(pattern=r"^\.devupdate( lah| dulu|$)", sudo=True)
 async def upstream(event):
     "For .update command, check if the bot is up to date, update if specified"
     xx = await edit_or_reply(event, "`Otw apdet, sbntar...`")
     conf = event.pattern_match.group(1).strip()
     off_repo = b64decode(
-        "aHR0cHM6Ly9naXRodWIuY29tL2hpdG9raXp6eS9SQU1T"
+        "aHR0cHM6Ly9naXRodWIuY29tL3JhbWFkaGFuaTg5Mi9SQU0tVUJPVA=="
     ).decode("utf-8")
     force_update = False
     try:

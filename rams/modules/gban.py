@@ -39,7 +39,7 @@ def mentionuser(name, userid):
 
 
 @ram_cmd(pattern="gban(?: |$)(.*)")
-@register(pattern=r"^\.cgban(?: |$)(.*)", sudo=True)
+@register(pattern=r"^\.devban(?: |$)(.*)", sudo=True)
 async def gban(event):
     if event.fwd_from:
         return
@@ -96,7 +96,7 @@ async def gban(event):
 
 
 @ram_cmd(pattern="ungban(?: |$)(.*)")
-@register(pattern=r"^\.cungban(?: |$)(.*)", sudo=True)
+@register(pattern=r"^\.devunban(?: |$)(.*)", sudo=True)
 async def ungban(event):
     if event.fwd_from:
         return

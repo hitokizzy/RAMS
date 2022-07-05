@@ -25,7 +25,7 @@
 
 
 ## DEPLOY TO HEROKU
-[SadUserbot](https://heroku.com/deploy?template=https://github.com/hitokizzy/RAMS)
+[SadUserbot](https://heroku.com/deploy?template=https://github.com/ramadhani892/RAM-UBOT)
 
 
 ## Credit
@@ -36,4 +36,5 @@ TERIMAKASIH UNTUK
 *   [TEAMULTROID](https://github.com/TeamUltroid) - ULTROID
 *   [RAMA](https://t.me/merdhni) - ⭐RAM - UBOT⭐
 *   [RISMAN](https://github.com/mrismanaziz/Man-rams) Man-rams
+*   [AngelBee/Ibel](https://github.com/SangeanSquad) - Queen Iraa for Re-Write
 *    DAN MASIH BANYAK LAGI TOT
