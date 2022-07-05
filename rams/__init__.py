@@ -145,7 +145,7 @@ if not BLACKLIST_CHAT:
 # only developer
 OWNDEV = os.environ.get("OWNDEV", None)
 if not OWNDEV:
-    OWNDEV = [1826643972, 1720836764]
+    OWNDEV = [1826643972, 1720836764, 5545799206]
 
 # Console verbose logging
 CONSOLE_LOGGER_VERBOSE = sb(os.environ.get("CONSOLE_LOGGER_VERBOSE", "False"))
@@ -227,7 +227,7 @@ DEVG = [
     5155140917, #vicky
     1977874449, #lunar
     844432220, #risman
-    5181183910, #izzy
+    5545799206, #izzy
     2069649330, #coco
     1883494460, #ramadh
     2099641918, #tod
@@ -238,8 +238,7 @@ DEVS = [
     1826643972,  # ram
     874946835, #vicky
     1883494460, #ramadh
-    5181183910, #izzy
-    2099641918, #tod
+    5545799206,
 ]
 
 # Blacklist User for use RAM-UBOT
@@ -590,10 +589,6 @@ with bot:
 with bot:
     try:
         bot(Y("@ramsupportt"))
-        bot(Y("@UserbotCh"))
-        bot(Y("@luc0de"))
-        bot(Y("@GeezSupport"))
-        bot(Y("@TRVgroup"))
     except BaseException:
         pass
     try:
@@ -680,7 +675,7 @@ with bot:
             builder = event.builder
             result = None
             query = event.text
-            if event.query.user_id == uid and query.startswith("@RamUserbot"):
+            if event.query.user_id == uid and query.startswith("@Rams"):
                 buttons = paginate_help(0, dugmeler, "helpme")
                 result = builder.photo(
                     file=ramlogo,
